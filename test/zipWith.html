@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>zipWith</title>
+</head>
+<body>
+  <script src="../src/zipWith.js"></script>
+  <script type="text/javascript">
+  var log = console.log;
+  log('case 1:');
+  log(zipWith([], [], []));
+  log(zipWith([1, 2], [true, false], ['a', 'b']));
+  log(zipWith([1], [true, false], ['a', 'b']));
+  log(zipWith([1, 2], [true], ['a', 'b']));
+  log(zipWith([1, 2], [true, false], ['a']));
+  log(zipWith(1, [1, 2], 2, [true, false], 3, ['a', 'b'], 4));
+
+  log('case 2:');
+  var foo = function(a, b, c) {
+    return a + b + c;
+  };
+  log(zipWith([1, 2], [10, 20], [100, 200], foo));
+  log(zipWith([1], [10, 20], [100, 200], foo));
+  log(zipWith([1, 2], [10], [100, 200], foo));
+  log(zipWith([1, 2], [10, 20], [100], foo));
+  log(zipWith(1, [1, 2], 2, [10, 20], 3, [100, 200], 4, foo));
+  </script>
+</body>
+</html>
