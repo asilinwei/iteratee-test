@@ -1,3 +1,11 @@
+/**
+ * 2018-11-28
+ * @copyright LinWei 2018
+ * @see [`_.zipWith`](https://lodash.com/docs/4.17.11#zipWith)
+ * @param {...Array} [arrays] The arrays to process.
+ * @param {Function} [iteratee] The function to combine grouped values.
+ * @return {Array} The result array.   
+ */
 if (!window.zipWith) {
   var zipWith = (function() {
     "use strict";
