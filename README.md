@@ -1,2 +1,2 @@
 # iteratee-test
-This is a repository about iteatee test.
+This is a repository about iteratee test.
